@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quebra-Cabeça Avançado</title>
+<style>
+  #controls {
+    text-align: center;
+    margin: 10px;
+  }
+  #puzzle {
+    display: grid;
+    gap: 2px;
+    margin: 20px auto;
+    max-width: 90vw;
+    aspect-ratio: 1 / 1;
+  }
+  .piece {
+    border: 1px solid #333;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    touch-action: none;
+    cursor: grab;
+  }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Quebra-Cabeça Avançado</h2>
+<div id="controls">
+  <input type="file" id="imageInput" accept="image/*">
+  <label for="sizeInput">Tamanho:</label>
+  <select id="sizeInput">
+    <option value="1">1x1</option>
+    <option value="2">2x2</option>
+    <option value="3">3x3</option>
+    <option value="4">4x4</option>
+    <option value="5">5x5</option>
+    <option value="6">6x6</option>
+    <option value="7">7x7</option>
+    <option value="8">8x8</option>
+  </select>
+</div>
+<div id="puzzle"></div>
+
+<script src="puzzle-advanced.js"></script>
+</body>
+</html>
