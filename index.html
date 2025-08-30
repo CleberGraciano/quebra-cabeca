@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quebra-Cabeça Profissional Correto</title>
+<title>Quebra-Cabeça Profissional Mobile</title>
 <style>
   #controls {
     text-align: center;
@@ -21,19 +21,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    touch-action: none;
-    cursor: grab;
-    background-size: cover;
-    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .piece img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
   }
   .empty {
-    background: #ccc !important;
+    background: #ccc;
   }
 </style>
 </head>
 <body>
 
-<h2 style="text-align:center;">Quebra-Cabeça Profissional Correto</h2>
+<h2 style="text-align:center;">Quebra-Cabeça Profissional Mobile</h2>
 <div id="controls">
   <input type="file" id="imageInput" accept="image/*">
   <label for="sizeInput">Tamanho:</label>
